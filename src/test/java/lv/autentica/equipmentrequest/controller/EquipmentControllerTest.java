@@ -3,7 +3,6 @@ package lv.autentica.equipmentrequest.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-
 import lv.autentica.equipmentrequest.equipment.EquipmentDTO;
 import lv.autentica.equipmentrequest.equipment.EquipmentEntity;
 import lv.autentica.equipmentrequest.equipment.EquipmentRepository;
@@ -14,7 +13,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -40,7 +38,6 @@ public class EquipmentControllerTest {
 
     @MockBean
     EquipmentRepository repository;
-
 
     @Test
     //test should create new Equipment and check can we see status OK

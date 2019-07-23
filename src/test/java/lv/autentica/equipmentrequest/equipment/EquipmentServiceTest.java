@@ -34,7 +34,6 @@ public class EquipmentServiceTest {
     @Autowired
     EquipmentRepository repository;
 
-
     @MockBean
     EquipmentRepository mockRepo;
 
@@ -60,7 +59,6 @@ public class EquipmentServiceTest {
         //check if the Object is saved to the database
         assertNotNull(equipmentEntity);
     }
-
 
     @Test
     //test check if object with Id deleted from list
